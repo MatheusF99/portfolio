@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       </Head>
 
       <main>
-        <h1>hello worlde</h1>
+        <h1>hello world</h1>
       </main>
     </div>
   )
