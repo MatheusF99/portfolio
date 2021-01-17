@@ -2,7 +2,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import loveLogo from '../assets/undraw_Appreciation_re_p6rl.svg'
+import LoveLogo from '../assets/undraw_Appreciation_re_p6rl.svg'
 const Home: React.FC = () => {
   return (
     <div>
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       </Head>
 
       <main>
-        <img src={loveLogo} alt="" />
+        <LoveLogo />
         <h1>hello world</h1>
       </main>
     </div>
