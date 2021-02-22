@@ -14,7 +14,6 @@ export const Container = styled.div`
     margin-top: 2rem;
   }
   p {
-    margin-top: 1rem;
     font-size: 2rem;
     line-height: 32px;
     font-family: 'Rajdhani', sans-serif;

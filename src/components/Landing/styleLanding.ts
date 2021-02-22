@@ -9,5 +9,5 @@ export const Container = styled.div`
   align-items: center;
 
   background: ${props => props.theme.colors.background};
-  color: ${props => props.theme.colors.green};
+  color: ${props => props.theme.colors.text};
 `
