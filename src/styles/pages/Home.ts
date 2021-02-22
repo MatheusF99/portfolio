@@ -5,8 +5,6 @@ export const Container = styled.div`
   height: 100vh;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 
   h1 {
@@ -20,5 +18,8 @@ export const Container = styled.div`
     font-size: 2rem;
     line-height: 32px;
     font-family: 'Rajdhani', sans-serif;
+  }
+  img {
+    width: 100%;
   }
 `

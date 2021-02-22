@@ -1,4 +1,5 @@
 const theme = {
+  title: 'light',
   colors: {
     background: '#F2F3F5',
     text: '#666666',

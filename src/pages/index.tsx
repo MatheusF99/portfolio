@@ -2,8 +2,10 @@
 import React from 'react'
 import Head from 'next/head'
 
-import LoveLogo from '../assets/undraw_Appreciation_re_p6rl.svg'
+// import LoveLogo from '../assets/undraw_Appreciation_re_p6rl.svg'
 import { Container } from '../styles/pages/Home'
+import Header from '../components/Header/header'
+import Landing from '../components/Landing/landing'
 
 const Home: React.FC = () => {
   return (
@@ -12,9 +14,12 @@ const Home: React.FC = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <LoveLogo />
+      <Header />
+
+      {/* <LoveLogo />
       <h1>React Struture</h1>
-      <p>A Typescript + NextJS Struture by with Love</p>
+      <p>A Typescript + NextJS Struture by with Love</p> */}
+      <Landing />
     </Container>
   )
 }
