@@ -5,20 +5,20 @@ export const Container = styled.div`
   height: 100vh;
 
   display: flex;
-  jusfify-content: center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
   h1 {
-    font-size: 54px;
+    font-size: 5rem;
     font-family: 'Rajdhani', sans-serif;
     color: ${props => props.theme.colors.primary};
-    margin-top: 40px;
+    margin-top: 2rem;
   }
-  p{
-      margin-top 24px;
-      font-size: 24px;
-      line-height: 32px;
-      font-family: 'Rajdhani', sans-serif;
+  p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 32px;
+    font-family: 'Rajdhani', sans-serif;
   }
 `
