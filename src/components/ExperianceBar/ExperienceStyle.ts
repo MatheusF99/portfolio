@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 
   max-width: 992px;
   width: 100%;
@@ -21,13 +20,25 @@ export const Container = styled.div`
     span {
       font-size: 1rem;
     }
-    > div {
+    div {
       flex: 1;
       height: 4px;
       border-radius: 4px;
       background: ${props => props.theme.colors.grayLine};
       margin: 0 1.5rem;
       position: relative;
+
+      div {
+        height: 4px;
+        margin: 0;
+        border-radius: 4px;
+        background: ${props => props.theme.colors.green};
+      }
+      .current-experience {
+        position: absolute;
+        top: 12px;
+        transform: translateX(-50%);
+      }
     }
   }
 `
