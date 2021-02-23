@@ -6,6 +6,7 @@ import Head from 'next/head'
 import { Container } from '../styles/pages/Home'
 import Header from '../components/Header/header'
 import Landing from '../components/Landing/landing'
+import ExperinceBar from '../components/ExperianceBar/ExperinceBar'
 
 import GlobalStyles from '../styles/global'
 import { ThemeProvider } from 'styled-components'
@@ -28,7 +29,7 @@ const Home: React.FC = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header toggleTheme={toggleTheme} />
-
+        <ExperinceBar />
         {/* <LoveLogo />
       <h1>React Struture</h1>
       <p>A Typescript + NextJS Struture by with Love</p> */}
