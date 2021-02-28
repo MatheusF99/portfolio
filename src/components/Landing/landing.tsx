@@ -2,10 +2,20 @@
 import React from 'react'
 import { Container } from './styleLanding'
 
+import LogoIcon from '../../assets/logo.svg'
+
 const Landing: React.FC = () => {
   return (
     <Container>
-      <p>hello world</p>
+      <header>
+        <LogoIcon />
+
+        <div className="toggle-Button">
+          <div className="one"></div>
+          <div className="two"></div>
+          <div className="three"></div>
+        </div>
+      </header>
     </Container>
   )
 }

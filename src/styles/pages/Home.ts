@@ -9,18 +9,5 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  h1 {
-    font-size: 5rem;
-    font-family: 'Rajdhani', sans-serif;
-    color: ${props => props.theme.colors.primary};
-    margin-top: 2rem;
-  }
-  p {
-    font-size: 2rem;
-    line-height: 32px;
-    font-family: 'Rajdhani', sans-serif;
-  }
-  img {
-    width: 100%;
-  }
+  font-family: 'Rajdhani', sans-serif;
 `
