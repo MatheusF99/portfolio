@@ -1,11 +1,20 @@
 // eslint-disable-next-line no-use-before-define
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from './styleLanding'
 
 import LogoIcon from '../../assets/logo.svg'
 import BackgroundImage from '../../assets/Background-big.svg'
+import ElipseImage from '../../assets/Ellipse 1.svg'
+
 
 const Landing: React.FC = () => {
+  const [sideBar, setsideBar] = useState(false)
+
+  function showMenu() {
+    setsideBar(!sideBar)
+  }
+
+
   return (
     <Container>
       <BackgroundImage />
@@ -14,12 +23,30 @@ const Landing: React.FC = () => {
         <header>
           <LogoIcon />
 
-          <div className="toggle-Button">
+          <button onClick={showMenu} className="toggle-Button">
             <div className="one"></div>
             <div className="two"></div>
             <div className="three"></div>
-          </div>
+          </button>
         </header>
+
+
+        <div className={sideBar ? 'menu active' : 'menu'}>
+          <button onClick={showMenu} >X</button>
+          <ul className="menu-list">
+            <li>Work</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+          <ul className="social-list">
+            <li>Work</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
 
         <section>
           <div className="div-1">
@@ -33,7 +60,7 @@ const Landing: React.FC = () => {
 
           </div>
           <div className="div-2">
-            <h1>hello world</h1>
+            <ElipseImage />
           </div>
         </section>
       </div>
