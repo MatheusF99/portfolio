@@ -24,7 +24,7 @@ const Home: React.FC = () => {
       <GlobalStyles />
       <Container>
         <Head>
-          <title>Create Next App</title>
+          <title>Portfolio</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         {/* <Header toggleTheme={toggleTheme} /> */}

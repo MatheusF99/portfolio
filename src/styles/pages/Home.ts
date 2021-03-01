@@ -9,5 +9,5 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto', sans-serif;
 `

@@ -14,10 +14,12 @@ export default createGlobalStyle`
     body{
         background: ${props => props.theme.colors.background};
         color: ${props => props.theme.colors.text};
+
+        font-family: 'Quicksand', sans-serif;
     }
 
     body, input, textarea, button{
-        font: 400 1.6rem 'Rajdhani', sans-serif;
+        font: 400 1.6rem 'Quicksand', sans-serif;
     }
 
     button{

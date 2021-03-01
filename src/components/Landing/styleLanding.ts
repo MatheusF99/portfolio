@@ -51,6 +51,13 @@ export const Container = styled.div`
 
       .toggle-Button{
         width: 4rem;
+        height: 4rem;
+
+        background: none;
+
+        margin: auto 0;
+
+        border: 0;
 
         display: flex;
         justify-content: center;
@@ -87,8 +94,81 @@ export const Container = styled.div`
         transition: .3s;
 
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
+
+        flex-direction: row;
+
+
+
+        button {
+
+          width: 4rem;
+          height: 4rem;
+
+          background: none;
+          border: 0;
+
+          color: #fff;
+
+          position: absolute;
+          top: 6.5rem;
+          right: 12rem;
+        }
+
+        ul li{
+          list-style: none;
+        }
+
+        .social-list{
+
+          height: 40%;
+
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          flex-direction: column;
+
+          font-size: 2.5rem;
+
+          ul li{
+            margin: 2rem 0;
+          }
+        }
+        .menu-list{
+          height: 40%;
+
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+
+          flex-direction: column;
+
+          font-size: 4.5rem;
+          font-weight: 400;
+
+          span{
+            font-size: 2.5rem;
+            margin-bottom: 5rem;
+          }
+
+          ul li{
+            margin: 0.8rem 0;
+          }
+        }
+
+        .email-div{
+          display: flex;
+          flex-direction: column;
+
+          position: absolute;
+
+          left: 5rem;
+          bottom: 2rem;
+
+          font-size: 2rem;
+        }
 
       }
       .menu.active{
@@ -124,6 +204,8 @@ export const Container = styled.div`
           align-items: flex-start;
           flex-direction: column;
 
+          font-family: 'Quicksand', sans-serif;
+
           color: #000;
 
           .hello{
@@ -140,6 +222,7 @@ export const Container = styled.div`
 
         }
         button{
+
           width: 245px;
           height: 80px;
 
@@ -151,6 +234,7 @@ export const Container = styled.div`
           border-radius: 25px;
 
           font-size: 2rem;
+          font-weight: 600;
 
           display: flex;
           justify-content: center;

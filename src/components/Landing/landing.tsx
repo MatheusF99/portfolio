@@ -33,18 +33,34 @@ const Landing: React.FC = () => {
 
         <div className={sideBar ? 'menu active' : 'menu'}>
           <button onClick={showMenu} >X</button>
-          <ul className="menu-list">
-            <li>Work</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
-          <ul className="social-list">
-            <li>Work</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
+          <div className="social-list">
+            <span>Social</span>
+
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>GitHub</li>
+              <li>YouTube</li>
+              <li>Twitch</li>
+            </ul>
+
+          </div>
+
+          <div className="menu-list">
+            <span>Menu</span>
+
+            <ul>
+              <li>Work</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <div className="email-div">
+            <span>Email</span>
+            <a href="http://">Matheus@email.com</a>
+          </div>
         </div>
 
 
