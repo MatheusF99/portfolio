@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import { Container } from './styleLanding'
 
+import Image from 'next/image'
+
 import LogoIcon from '../../assets/logo.svg'
 import BackgroundImage from '../../assets/Background-big.svg'
 import ElipseImage from '../../assets/Ellipse 1.svg'

@@ -75,7 +75,7 @@ export const Container = styled.div`
           background: #000;
           height: 4px;
           width: 50%;
-          margin: .1rem 0 .05rem 0.4rem;
+          margin: 0.1rem 0 .1rem 0.4rem;
 
         }
       }
@@ -130,7 +130,11 @@ export const Container = styled.div`
 
           flex-direction: column;
 
-          font-size: 2.5rem;
+          font-size: 2rem;
+
+          ul{
+            margin: 4rem 0;
+          }
 
           ul li{
             margin: 2rem 0;
@@ -153,8 +157,9 @@ export const Container = styled.div`
             margin-bottom: 5rem;
           }
 
+
           ul li{
-            margin: 0.8rem 0;
+            margin: 2rem 0;
           }
         }
 
