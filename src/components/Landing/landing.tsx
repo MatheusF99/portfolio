@@ -7,6 +7,12 @@ import Image from 'next/image'
 import LogoIcon from '../../assets/logo.svg'
 import BackgroundImage from '../../assets/Background-big.svg'
 import ElipseImage from '../../assets/Ellipse 1.svg'
+import { AiOutlineGithub, AiOutlineInstagram, AiOutlineYoutube } from 'react-icons/ai'
+import { FiTwitter } from 'react-icons/fi'
+import { FaTwitch } from 'react-icons/fa'
+import { GrClose } from 'react-icons/gr'
+import { RiCloseFill } from 'react-icons/ri'
+import { CgMenuHotdog } from 'react-icons/cg'
 
 
 const Landing: React.FC = () => {
@@ -19,31 +25,31 @@ const Landing: React.FC = () => {
 
   return (
     <Container>
-      <BackgroundImage />
+      <div className="backgroundImage">
+        <BackgroundImage />
+      </div>
 
       <div className="landing">
         <header>
           <LogoIcon />
 
           <button onClick={showMenu} className="toggle-Button">
-            <div className="one"></div>
-            <div className="two"></div>
-            <div className="three"></div>
+            <CgMenuHotdog />
           </button>
         </header>
 
 
         <div className={sideBar ? 'menu active' : 'menu'}>
-          <button onClick={showMenu} >X</button>
+          <button onClick={showMenu} ><RiCloseFill size={40} /></button>
           <div className="social-list">
             <span>Social</span>
 
             <ul>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>GitHub</li>
-              <li>YouTube</li>
-              <li>Twitch</li>
+              <li><AiOutlineInstagram /> Instagram</li>
+              <li><FiTwitter /> Twitter</li>
+              <li><AiOutlineGithub /> GitHub</li>
+              <li><AiOutlineYoutube /> YouTube</li>
+              <li><FaTwitch /> Twitch</li>
             </ul>
 
           </div>

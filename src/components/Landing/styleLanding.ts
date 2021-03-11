@@ -8,9 +8,11 @@ export const Container = styled.div`
 
   /* position: relative; */
 
-  svg{
-    height: 90vh;
-    width: 100vw;
+  .backgroundImage{
+    svg{
+      height: 90vh;
+      width: 100vw;
+    }
   }
 
   .landing{
@@ -64,20 +66,6 @@ export const Container = styled.div`
         align-items: center;
         flex-direction: column;
 
-        .one, .three{
-          background: #000;
-          height: 4px;
-          width: 60%;
-          margin: .1rem 0;
-        }
-
-        .two{
-          background: #000;
-          height: 4px;
-          width: 50%;
-          margin: 0.1rem 0 .1rem 0.4rem;
-
-        }
       }
     }
 
@@ -113,7 +101,7 @@ export const Container = styled.div`
 
           position: absolute;
           top: 6.5rem;
-          right: 12rem;
+          right: 12.5rem;
         }
 
         ul li{
@@ -138,6 +126,12 @@ export const Container = styled.div`
 
           ul li{
             margin: 2rem 0;
+            display: flex;
+            align-items: center;
+
+            svg{
+              margin-right: 1rem;
+            }
           }
         }
         .menu-list{
